@@ -4,939 +4,121 @@ body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* Header Start */
-header{
+#iconimg{
+    width: 20px;
+}
+section{
+    position: relative;
     width: 100%;
-    height: 70px;
-    position: fixed;
-    background-color: #fff;
-    top: 0;
-    overflow: hidden;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-header div{
-    float: left;
-}
-header .logo{
-    padding-top: 20px;
-    margin-left: 380px;
-
-}
-header .navbar{
+section header{
     position: absolute;
     top: 0;
-    right: 450px;
-}
-
-header .navbar ul{
-    list-style: none;
-}
-header .navbar ul li{
-    float: left;
-    padding-left: 30px;
-    margin-top: 8px;
-}
-header .navbar ul li a{
-    text-decoration: none;
-    color: rgb(75, 75, 75);
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: 600;
-}
-header .navbar ul li a:hover{
-    color: #8490ff;
-    transition: all linear 0.3s;
-}
-#correntcolor{
-    color: #8490ff;
-}
-.checkbtn{
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.9);
-    float: right;
-    line-height: 80px;
-    margin-right: -420px;
-    display: none;
-}
-#check{
-    display: none;
-}
-        /* Header End */
-        /* Section-01 Start */
-.section1{
-    background-color: #f9f9ff;
     width: 100%;
-    height: 700px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-    
+    justify-content: flex-end;
+    padding: 20px;
 }
-.half1, .half2{
-    width: 50%;
-}
-.half1{
-    margin-left: 380px;
-    margin-bottom: 120px;
-}
-.half2{
-    padding-right: 400px;
-}
-.half2 img{
-    max-width: 100%;
-    height: auto;
-    margin-top: 90px;
-}
-.half1 h3{
-    font-weight: normal;
-    text-transform: uppercase;
-}
-.half1 h1{
-    font-size: 55px;
-    text-transform: uppercase;
-    opacity: 0.85;
-    
-}
-.half1 p{
-    color: rgb(78, 78, 78);
-}
-.half1 input{
-    padding: 10px 25px;
-    color: #fff;
-    background: linear-gradient(to right, #8391ff, #64bcfd);
-    outline: none;
-    border: #8391ff 1px solid;
-    cursor: pointer;
-}
-.half1 input:hover{
-    box-shadow: 5px 10px 30px rgba(131, 146, 255, 0.5);
-}
-            /* Section-01 End */
-            /* Section-02 Start */
-.section2{
-    width: 100%;
-    height: 620px;
+section header ul{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.section2 div{
-    width: 40%;
-    margin: 0 auto;
+section header ul li{
+    list-style: none;
+    margin-left: 20px;
 }
-.section2 img{
-    width: 70%;
-    height: auto;
-}
-.section2 .img2{
-    padding-left: 350px;
-}
-.text2 h4{
-    font-weight: normal;
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 14px;
-    text-transform: uppercase;
-}
-.text2 h1{
-    font-weight: bold;
-    font-size: 35px;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.9);
-}
-.text2 p{
+section header ul li a{
+    color: black;
+    text-decoration: none;
     font-size: 15px;
-    color: rgba(0, 0, 0, 0.5);
-    width: 60%;
-    line-height: 22px;
 }
-.text2 input{
-    padding: 10px 25px;
-    color: #fff;
-    background: linear-gradient(to right, #8391ff, #64bcfd);
+section header ul li button{
+    background-color: #1f91ee;
+    border: none;
     outline: none;
-    border: #8391ff 1px solid;
+    padding: 8px 14px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px;
     cursor: pointer;
-    font-size: 15px;
-    text-transform: uppercase;
 }
-.text2 h4, h1, p{
-    padding: 8px;
+section .main{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.text2 input{
-    margin: 8px;
-}
-.text2 input:hover{
-    box-shadow: 5px 10px 30px rgba(131, 146, 255, 0.5);
-}
-            /* Section-02 End */
-            /* Section-03 Start */
-.section3{
-    width: 100%;
-    height: 650px;
-    margin: 0 auto;
-    text-align: center;
-}
-.text3{
-    padding-bottom: 50px;
-}
-.text3 h1{
-    font-size: 40px;
-}
-.text3 p{
-    width: 700px;
-    color: rgba(0, 0, 0, 0.7);
-    margin: 0 auto;
-    margin-top: -35px;
-}
-.service{
-    width: 80%;
-    margin: 0 auto;
-}
-.ser1, .ser2{
-    width: 100%;
-    overflow: hidden;
-}
-.ser2{
-    padding-top: 30px;
-}
-.ser1 div, .ser2 div{
-    width: 32%;
-    float: left;
-    padding: 5px;
-    margin: 0 auto;
-}
-.service i{
-    font-size: 35px;
-    color: rgba(0, 0, 0, 0.7);
-}
-.service h1{
-    color: rgba(0, 0, 0, 0.9);
-}
-.service p{
-    color: rgba(0, 0, 0, 0.7);
-}
-.ser1 div:hover, .ser2 div:hover{
-    background-color: #8391ff;
-    transition: all linear 0.3s;
-}
-.ser1 div:hover:hover i{
-    color: #fff;
-    transition: all linear 0.3s;
-}
-.ser1 div:hover:hover h1{
-    color: #fff;
-    transition: all linear 0.3s;
-}
-.ser1 div:hover:hover p{
-    color: #fff;
-    transition: all linear 0.3s;
-}
-.ser2 div:hover:hover i{
-    color: #fff;
-    transition: all linear 0.3s;
-}
-.ser2 div:hover:hover h1{
-    color: #fff;
-    transition: all linear 0.3s;
-}
-.ser2 div:hover:hover p{
-    color: #fff;
-    transition: all linear 0.3s;
-}
-            /* Section-03 End */
-            /* Section-04 Start */
-.section4{
-    width: 100%;
-    height: 300px;
-    background-color: #8391ff;
-}
-.section4 div{
-    float: left;
-    width: 20%;
-    margin: 0 auto;
+section .main .searchbox{
     position: relative;
-    top: 100px;
-    left: 250px;
-}
-.section4 h1{
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 0px;
-}
-.section4 h1, .section4 p{
-    text-align: center;
-    color: #fff;
-}
-        /* Section-04 End */
-        /* Section-05 Start */
-.section5{
     width: 100%;
-    box-sizing: border-box;
+    margin-top: 20px;
 }
-.section5 .text4{
-    text-align: center;
-    padding: 100px 0;
-}
-.section5 .text4 h1{
-    font-size: 35px;
-    color: rgba(0, 0, 0, 0.9);
-}
-.section5 .text4 p{
-    color: rgba(0, 0, 0, 0.5);
-    margin-top: -30px;
-    margin-bottom: 30px;
-}
-.section5 .images{
-    width: 60%;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-.section5 .images div{
-    width: 340px;
-    height: 339px;
-    padding-bottom: 80px;
-    text-align: center;
-}
-.section5 .images h1{
-    font-size: 20px;
-    color: rgba(0, 0, 0, 0.9);
-}
-.section5 .images p{
-    color: rgba(0, 0, 0, 0.7);
-    line-height: 0;
-    margin-top: -20px;
-}
-.section5 figure{
-    width: 340px;
-    height: 339px;
-    background: linear-gradient(40deg, #8490ff 40%, #62bdfc);
-    margin: 0;
-    padding: 0;
-    border-radius: 3px;
-    overflow: hidden;
-}
-.section5 figure img:hover{
-    opacity: 0.2;
-    transition: all ease-in 0.3s;
-}
-        /* Section-05 End */
-        /* Section-06 Start */
-.section6{
+section .main .searchbox .search{
     width: 100%;
-    height: 750px;
-}
-.section6 .text5{
-    text-align: center;
-    padding: 2% 0;
-}
-.section6 .text5 h1{
-    font-size: 35px;
-    line-height: 0;
-    padding-top: 15px;
-    color: rgba(0, 0, 0, 0.9);
-}
-.section6 .text5 p{
-    color: rgba(0, 0, 0, 0.6);
-    margin-top: -12px;
-}
-.section6 .card{
-    width: 75%;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-}
-.section6 .card1{
-    width: 300px;
-    height: 700px;
-    background-color: rgb(249, 249, 255);
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.section6 .card1 h1{
-    font-size: 50px;
-    padding-top: 8px;
-}
-.section6 .card1 .price{
-    font-size: 35px;
-}
-.section6 .card1 p{
-    color: rgba(0, 0, 0, 0.5);
-}
-.section6 .card1 input{
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
     outline: none;
-    background-color: #8490ff;
-    color: #fff;
-    font-size: 25px;
-    padding: 6px 60px;
-    font-weight: bold;
-    border: 1px solid #fff;
+    font-size: 16px;
 }
-.section6 .card1 hr{
-    width: 75%;
-}
-.section6 .card1:hover{
-    background-color: #8391ff;
-    color: #fff;
-    transition: all 0.3s ease-in;
-    transform: scale(1.05);
-    border: 1px solid rgba(130, 147, 255, 0.5);
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-}
-.section6 .card1:hover p{
-    color: white;
-}
-.section6 .card1:hover input{
-    color: rgba(0, 0, 0, 0.9);
-    background-color: #fff;
-    transition: all ease-in 0.3s;
-    cursor: pointer;
-}
-.foot1 .footerp{
-    width: 550px;
-}
-        /* Section-06 End */
-        /* Footer area Start */
-footer{
-    background-color: rgb(4, 9, 30);
-    width: 100%;
-    height: 400px;
-    color: #fff;
+section .main .searchbox .icons{
     position: absolute;
-    margin-top: 300px;
-}
-footer .foot{
-    width: 80%;
-    height: auto;
+    top: 0;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-top: 120px;
+    padding: 12px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
 }
-footer .foot .foot1 p{
-    color: rgba(255, 255, 255, 0.5);
-    padding-left: 0;
+section .main .buttons{
+    margin-top: 20px;
 }
-footer .foot .foot1 input{
-    font-size: 15px;
-    outline: none;
+section .main .buttons button{
+    margin: 0 5px;
+    padding: 12px 20px;
+    color: rgb(112, 112, 112);
+    font-size: 14px;
     border: none;
-    padding: 10px 150px 10px 10px;
-    border-radius: 10px;
-}
-footer .foot .foot1 button{
-    font-size: 18px;
-    color: #fff;
+    cursor: pointer;
+    border-radius: 1px solid transparent;
     outline: none;
-    border: none;
-    background-color: #8391ff;
-    cursor: pointer;
-    padding: 8px 15px;
-    border-radius: 10px;
 }
-footer .foot .foot1 i{
-    font-size: 20px;
-    cursor: pointer;
-    padding: 2px 5px;
+section .main .buttons button:hover{
+    background-color: #ccc;
 }
-footer .foot .foot1 i:hover{
-    color: #8391ff;
-    transition: all linear 0.2s;
+section .main .lang{
+    margin-top: 20px;
 }
-/* @media(min-width: 750px) and ( max-width: 840px){
-    header{
-        width: 100%;
-        height: auto;
-    }
-    header .logo{
-        margin-left: 30px;
-        padding: 20px;
-    }
-    .checkbtn{
-        display: block;
-        font-size: 50px;
-    }
-    header .navbar ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #f9f9f9;
-        top: 54px;
-        left: -1200px;
-        transition: all .4s;
-    }
-    header .navbar ul li{
-        line-height: 30px;
-        clear: both;
-        margin-top: 15px;
-    }
-    header .navbar ul li a{
-        font-size: 18px;
-        text-align: center;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-    .section1{
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-    .half1{
-        margin: auto;
-        padding: 0;
-        margin-top: 75px;
-    }
-    .half1 h3{
-        font-size: 20px;
-        padding-top: 20px;
-    }
-    .half1 h1{
-        font-size: 40px;
-        padding: 0;
-    }
-    .half1 p{padding-left: 0;}
-    .half2 img{
-        max-width: 100%;
-        height: auto;
-        margin: 50px 0 0 110px;
-    }
-    .section2{
-        width: 100%;
-        height: 100vh;
-        display: block;
-        top: 200px;
-        position: relative;
-
-    }
-    .section2 .img2 img{
-        position: relative;
-        right: 270px;
-    }
-    .section2 div{
-        width: 100%;
-    }
-    .text2{
-        position: relative;
-        left: 75px;
-
-    }
-    .text2 h1{
-        font-size: 30px;
-    }
-    .section3{
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: 150px;
-    }
-    .section3 h1{
-        font-size: 35px;
-    }
-    .section3 p{
-        width: 80%;
-    }
-    .ser1 div, .ser2 div{
-        clear: both;
-        position: relative;
-        width: 100%;
-        height: auto;
-        margin-top: 50px;
-    }
-    .ser1 div p, .ser2 div p{
-        text-align: center;
-        margin-left: 25px;
-    }
-    .ser1 div h1, .ser2 div h1{
-        font-size: 30px;
-    }
-    .section4{
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        top: 170px;
-    }
-    .section4 div{
-        clear: both;
-        margin-left: -50px;
-    }
-    .section4 h1, .section4 p{
-        margin-left: -45px;
-    }
-    .section5{
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: 100px;
-        left: -40px;
-    }
-    .section6{
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        top: 200px;
-    }
-    .section6 h1{
-        font-size: 30px;
-    }
-    .section6 .card{
-        display: block;
-        height: 100vh;
-        width: 100%;
-        position: relative;
-        left: 95px;
-    }
-    .section6 .card .card1{
-        margin-top: 50px;
-        margin-left: -30px;
-    }
-    footer{
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        top: 100em;
-    }
-    footer .foot{
-        display: block;
-        position: relative;
-        top: 100px;
-    }
-    .foot1 .footerp{
-        width: 100%;
-    }
-    footer .foot .foot1 button{
-        margin-top: 15px;
-    }
-    
-} */
-@media(max-width: 430px){
-    header{
-        width: 100%;
-        height: auto;
-    }
-    header .logo{
-        margin-left: 30px;
-        padding: 20px;
-    }
-    .checkbtn{
-        display: block;
-    }
-    header .navbar ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #f9f9f9;
-        top: 54px;
-        left: -1200px;
-        transition: all .4s;
-    }
-    header .navbar ul li{
-        line-height: 30px;
-        clear: both;
-        margin-top: 15px;
-    }
-    header .navbar ul li a{
-        font-size: 18px;
-        text-align: center;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-    .section1{
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-    .half1{
-        margin: auto;
-        padding: 0;
-        margin-top: 75px;
-    }
-    .half1 h3{
-        font-size: 20px;
-        padding-top: 20px;
-    }
-    .half1 h1{
-        font-size: 40px;
-        padding: 0;
-    }
-    .half1 p{padding-left: 0;}
-    .half2 img{
-        max-width: 100%;
-        height: auto;
-        margin: 50px 0 0 110px;
-    }
-    .section2{
-        width: 100%;
-        height: 100vh;
-        display: block;
-        top: 200px;
-        position: relative;
-
-    }
-    .section2 .img2 img{
-        position: relative;
-        right: 270px;
-    }
-    .section2 div{
-        width: 100%;
-    }
-    .text2{
-        position: relative;
-        left: 75px;
-
-    }
-    .text2 h1{
-        font-size: 30px;
-    }
-    .section3{
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: 150px;
-    }
-    .section3 h1{
-        font-size: 35px;
-    }
-    .section3 p{
-        width: 80%;
-    }
-    .ser1 div, .ser2 div{
-        clear: both;
-        position: relative;
-        width: 100%;
-        height: auto;
-        margin-top: 50px;
-    }
-    .ser1 div p, .ser2 div p{
-        text-align: center;
-        margin-left: 25px;
-    }
-    .ser1 div h1, .ser2 div h1{
-        font-size: 30px;
-    }
-    .section4{
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        top: 170px;
-    }
-    .section4 div{
-        clear: both;
-        margin-left: -50px;
-    }
-    .section4 h1, .section4 p{
-        margin-left: -45px;
-    }
-    .section5{
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: 100px;
-        left: -40px;
-    }
-    .section6{
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        top: 200px;
-    }
-    .section6 h1{
-        font-size: 30px;
-    }
-    .section6 .card{
-        display: block;
-        height: 100vh;
-        width: 100%;
-        position: relative;
-        left: 95px;
-    }
-    .section6 .card .card1{
-        margin-top: 50px;
-        margin-left: -30px;
-    }
-    footer{
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        top: 100em;
-    }
-    footer .foot{
-        display: block;
-        position: relative;
-        top: 100px;
-    }
-    .foot1 .footerp{
-        width: 100%;
-    }
-    footer .foot .foot1 button{
-        margin-top: 15px;
-    }
-    
+section .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f3efef;
 }
-@media(min-width: 750px) and (max-width: 840px){
-    header{
-        width: 100%;
-        height: auto;
-    }
-    header .logo{
-        margin-left: 30px;
-        padding: 20px;
-    }
-    .checkbtn{
-        display: block;
-        font-size: 40px;
-    }
-    header .navbar ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #f9f9f9;
-        top: 54px;
-        left: -1200px;
-        transition: all .4s;
-    }
-    header .navbar ul li{
-        line-height: 50px;
-        clear: both;
-        margin-top: 15px;
-    }
-    header .navbar ul li a{
-        font-size: 40px;
-        text-align: center;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-    .section1{
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-    .half1{
-        margin: auto;
-        padding: 0;
-        margin-top: 75px;
-    }
-    .half1 h3{
-        font-size: 20px;
-        padding-top: 20px;
-    }
-    .half1 h1{
-        font-size: 40px;
-        padding: 0;
-    }
-    .half1 p{padding-left: 0;}
-    .half2 img{
-        max-width: 100%;
-        height: auto;
-        margin: 50px 0 0 375px;
-    }
-    .section2{
-        width: 100%;
-        height: 100vh;
-        display: block;
-        top: 200px;
-        position: relative;
-
-    }
-    .section2 .img2 img{
-        position: relative;
-        right: 150px;
-    }
-    .section2 div{
-        width: 100%;
-    }
-    .text2{
-        position: relative;
-        left: 75px;
-
-    }
-    .text2 h1{
-        font-size: 40px;
-    }
-    .section3{
-        width: 100%;
-        height: auto;
-    }
-    .section3 h1{
-        font-size: 35px;
-    }
-    .section3 p{
-        width: 80%;
-    }
-    .ser1 div, .ser2 div{
-        /* clear: both;
-        position: relative;
-        width: 100%;
-        height: auto;
-        margin-top: 50px; */
-    }
-    .ser1 div p, .ser2 div p{
-        text-align: center;
-        margin-left: 15px;
-        width: 80%;
-    }
-    .ser1 div h1, .ser2 div h1{
-        font-size: 30px;
-    }
-    .section4{
-        width: 100%;
-        /* height: 100vh; */
-        position: relative;
-        top: 100px;
-    }
-    .section4 div{
-        /* clear: both; */
-        margin-left: -40px;
-    }
-    .section5{
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: 100px;
-    }
-    .section5 .images div{
-        padding-bottom: 90px;
-    }
-    .section6{
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        top: 200px;
-    }
-    .section6 h1{
-        font-size: 30px;
-    }
-    .section6 .card{
-        /* display: block; */
-        height: 100vh;
-        width: 100%;
-        position: relative;
-        /* left: 95px; */
-    }
-    .section6 .card .card1{
-        margin-top: 50px;
-    }
-    footer{
-        width: 100%;
-        height: 50vh;
-        position: relative;
-        top: -10em;
-    }
-    footer .foot{
-        display: block;
-        position: relative;
-        top: 100px;
-    }
-    .foot1 .footerp{
-        width: 80%;
-    }
-    
+section .footer .row{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(0, 0, 0, 0.05);
+}
+section .footer .row ul{
+    display: flex;
+}
+section .footer .row ul li{
+    list-style: none;
+}
+section .footer .row ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #5f7375d8;
+    margin-right: 25px;
 }
